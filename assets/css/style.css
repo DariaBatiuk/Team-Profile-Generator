@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+}
+
+nav{
+	background-color: rgb(216, 76, 76);
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+}
+
+#cards{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 20px 50px 20px;
+}
+
+#card__header{
+	background-color: rgba(15, 101, 230, 0.703);
+	color: white;
+	height: 30%;
+}
+
+#card__info{
+margin: 35px 20px 0 20px;
+border: 1px solid ;
+}
