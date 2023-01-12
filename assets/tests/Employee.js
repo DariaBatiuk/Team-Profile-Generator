@@ -11,12 +11,12 @@ test('getting the Employee data for Employee object', () =>{
 test('getting Employee name from getName()', () => {
 	expect(employee.getName().toBe('John'));
 });
-test('getting Employee name from getId()', () => {
+test('getting Employee id from getId()', () => {
 	expect(employee.getId().toBe('i'));
 });
-test('getting Employee name from getEmail()', () => {
+test('getting Employee email from getEmail()', () => {
 	expect(employee.getEmail().toBe('john@gmail.com'));
 });
-test('getting job from getJob()', () => {
+test('getting Employee job from getJob()', () => {
 	expect(employee.getJob().toBe('Employee'));
 });

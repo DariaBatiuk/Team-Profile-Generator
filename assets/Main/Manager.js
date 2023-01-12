@@ -4,7 +4,7 @@ class Manager extends Employee {
 	constructor(name, id, email, number) {
 		super(name, id, email);
 
-		this.nunber = number;
+		this.number = number;
   }
 
 	getNumber(){
