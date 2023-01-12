@@ -1,11 +1,10 @@
 const inquirer = require("inquirer");
 
 class Employee {
-	constructor(name, id, email, number) {
+	constructor(name, id, email) {
     this.name = name;
 		this.id = id;
 		this.email = email;
-		this.nunber = number;
   }
 
 	getName(){
@@ -16,9 +15,6 @@ class Employee {
 	}
 	getEmail(){
 		return this.getEmail
-	}
-	getNumber(){
-		return this.number
 	}
 	getJob (){
 		return "Employee"
