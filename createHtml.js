@@ -1,43 +1,5 @@
-function createHtml({ username, email, project, description, license, command, test, usage, githubLink }) {
-  return `#${project} 
-## Description
-${description}
-
-## Table of Contents
-
-A table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-What are command to run the project ? 
-${command}
-
-## Usage
-${usage}
-This app is used for generating professional read.me file. Include screenshots as needed.
-
-## License
-${renderLicenseBadge(license)}
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Command that can be used to test this app: ${test}
-
-## Questions
-
-More information about this project you can find on my Github account: ${username}
-Github link: ${githubLink}
-Also you can reach me via email ${email}
-
-`;
+function createHtml(employees) {
+  console.log(employees)
 return `<!DOCTYPE html>
 <html lang="en">
 <head>
