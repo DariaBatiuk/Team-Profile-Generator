@@ -111,11 +111,11 @@ function promptMemberChoice() {
 }
 
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) =>
-    err
-      ? console.log(err)
-      : console.log("Successfully created team profile web site!")
-  );
+  fs.writeFile('teamProfileGenerator', html, (err) =>{
+		err
+		? console.log(err)
+		: console.log("Successfully created team profile web site!")
+	});
 }
 
 initManager()
@@ -123,13 +123,11 @@ initManager()
   .then(() => {
     const html = createHtml(answersArray);
 		console.log(html);
-		fs.writeFile('teamProfileGenerator', html, (err) =>{
+		fs.writeFile('teamProfileGenerator.html', html, (err) =>{
 			err
       ? console.log(err)
       : console.log("Successfully created team profile web site!")
 		})
   });
-
-
 
 
