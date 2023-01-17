@@ -16,9 +16,10 @@ nav{
 
 #cards{
 display: flex;
-justify-content: center;
+flex-wrap: wrap;
+justify-content: space-around;
 align-items: center;
-padding: 50px 20px 50px 20px;
+padding: 50px 15% 50px 15%;
 }
 
 #card__header{
@@ -30,4 +31,8 @@ padding: 50px 20px 50px 20px;
 #card__info{
 margin: 35px 20px 0 20px;
 border: 1px solid ;
+}
+
+.card{
+	margin-bottom: 25px;
 }

@@ -5,6 +5,14 @@ const Engineer = require("./Main/Engineer");
 const Intern = require("./Main/Intern");
 const createHtml = require("./createHtml");
 
+const validateInput = (userInput) =>{
+	if (userInput == ""){
+		return "Please write your answer to the question"
+	} else {
+		return true;
+	}
+}
+
 const choiceQuestion = [
   {
     type: "list",
@@ -19,21 +27,25 @@ const managerQuestions = [
     type: "input",
     name: "name",
     message: "Enter Manager's name",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "id",
     message: "Enter eployee's ID",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "email",
     message: "Enter Manager's email",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "number",
     message: "Enter your office number",
+		validate: validateInput,
   },
 ];
 const engineerQuestions = [
@@ -41,21 +53,25 @@ const engineerQuestions = [
     type: "input",
     name: "name",
     message: "Enter Engineer's name",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "id",
     message: "Enter eployee's ID",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "email",
     message: "Enter Engineer's email",
+		validate: validateInput,
   },
 	{
     type: "input",
     name: "githubName",
     message: "Enter Engineer's Github name",
+		validate: validateInput,
   },
 ];
 const internQuestions = [
@@ -63,24 +79,30 @@ const internQuestions = [
     type: "input",
     name: "name",
     message: "Enter Intern's name",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "id",
     message: "Enter eployee's ID",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "email",
     message: "Enter Inter's email",
+		validate: validateInput,
   },
   {
     type: "input",
     name: "school",
     message: "Enter your school",
+		validate: validateInput,
   },
 ];
 const answersArray =[];
+
+
 
 function initManager() {
   return inquirer.prompt(managerQuestions).then((answers) => {
@@ -110,19 +132,11 @@ function promptMemberChoice() {
   });
 }
 
-function writeToFile(fileName, data) {
-  fs.writeFile('teamProfileGenerator', html, (err) =>{
-		err
-		? console.log(err)
-		: console.log("Successfully created team profile web site!")
-	});
-}
-
 initManager()
   .then(promptMemberChoice)
   .then(() => {
     const html = createHtml(answersArray);
-		console.log(html);
+		//console.log(html);
 		fs.writeFile('teamProfileGenerator.html', html, (err) =>{
 			err
       ? console.log(err)
