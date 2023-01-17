@@ -52,6 +52,11 @@ const engineerQuestions = [
     name: "email",
     message: "Enter Engineer's email",
   },
+	{
+    type: "input",
+    name: "githubName",
+    message: "Enter Engineer's Github name",
+  },
 ];
 const internQuestions = [
   {
@@ -79,17 +84,20 @@ const answersArray =[];
 
 function initManager() {
   return inquirer.prompt(managerQuestions).then((answers) => {
-    answersArray.push(answers)
+		const manager = new Manager(answers.name, answers.id, answers.email, answers.number)
+    answersArray.push(manager)
   });
 }
 function initEngineer() {
   return inquirer.prompt(engineerQuestions).then((answers) => {
-    answersArray.push(answers)
+		const engineer = new Engineer(answers.name, answers.id, answers.email, answers.githubName)
+    answersArray.push(engineer)
   });
 }
 function initIntern() {
   return inquirer.prompt(internQuestions).then((answers) => {
-    answersArray.push(answers)
+		const intern = new Intern(answers.name, answers.id, answers.email, answers.school)
+    answersArray.push(intern)
   });
 }
 function promptMemberChoice() {
@@ -115,6 +123,13 @@ initManager()
   .then(() => {
     const html = createHtml(answersArray);
 		console.log(html);
+		fs.writeFile('teamProfileGenerator', html, (err) =>{
+			err
+      ? console.log(err)
+      : console.log("Successfully created team profile web site!")
+		})
   });
+
+
 
 
