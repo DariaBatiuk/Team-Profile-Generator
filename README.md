@@ -5,7 +5,7 @@ AS A manager<br/>
 I WANT to generate a webpage that displays my team's basic info<br/>
 SO THAT I have quick access to their emails and GitHub profiles<br/>
 
-#Acceptance Criteria<br/>
+# Acceptance Criteria<br/>
 GIVEN a command-line application that accepts user input<br/>
 WHEN I am prompted for my team members and their information<br/>
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input<br/>
@@ -24,5 +24,5 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team<br/>
 THEN I exit the application, and the HTML is generated<br/>
 
-#Mock up
+# Mock up<br/>
 ![image](https://user-images.githubusercontent.com/83068010/213327173-23befdf2-58f4-4781-a6d5-254bdda7dd5f.png)
