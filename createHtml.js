@@ -16,7 +16,7 @@ let internHtml = [];
 		}
 	}
 
-  console.log(employees)
+  //console.log(employees)
 return `<!DOCTYPE html>
 <html lang="en">
 <head>

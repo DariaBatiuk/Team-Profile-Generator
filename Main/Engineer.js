@@ -8,7 +8,7 @@ class Engineer extends Employee {
   }
 
 	getGithubName(){
-		return this.getGithubName
+		return this.githubName
 	}
 	getJob (){
 		return "Engineer"
