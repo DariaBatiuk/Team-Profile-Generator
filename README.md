@@ -26,3 +26,6 @@ THEN I exit the application, and the HTML is generated<br/>
 
 # Mock up<br/>
 ![image](https://user-images.githubusercontent.com/83068010/213327173-23befdf2-58f4-4781-a6d5-254bdda7dd5f.png)
+
+# Video link
+https://drive.google.com/file/d/1Jf8_Qis1a2BVqUoDplDmnrqwrarBlxy_/view
