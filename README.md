@@ -28,4 +28,4 @@ THEN I exit the application, and the HTML is generated<br/>
 ![image](https://user-images.githubusercontent.com/83068010/213327173-23befdf2-58f4-4781-a6d5-254bdda7dd5f.png)
 
 # Video link
-https://drive.google.com/file/d/1Jf8_Qis1a2BVqUoDplDmnrqwrarBlxy_/view
+https://drive.google.com/file/d/1Id7lC-tHuPmcTWo-OOf2Hu2h3gYfWdON/view
